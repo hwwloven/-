@@ -1,0 +1,40 @@
+<!--文档说明／声明 让浏览器按h5标准渲染页面 -->
+<!DOCTYPE html>
+<!-- root tag/document -->
+<html lang="zh-CN">
+    <head>
+        <!-- 配置类的信息 -->
+        <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>情人节卡片</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <!--浏览器渲染给用户看到的所有内容 -->
+        <!--"万能'标签 -->
+        <div class="container">
+            <h1 class="title">我亲爱 你想我了吗？</h1>
+            <img src="./images/cat-01.gif" 
+            class="img-gif"
+            alt="举爱心的小猫动画">
+            <div class="txt" aria-hidden="true"></div>
+            <button class="button" id="y" aria-label="确认选择-想了">
+                想了
+            </button>
+            <button class="button button_negative" 
+                id="n"
+                role="alert"
+                aria-label="确认选择-没想">
+                没想
+            </button>
+            <button class="button button_reset"
+                aria-label="重置选择">
+                重启
+            </button>
+        </div>
+        <audio  id="h" src="./audios/录音_(格式转换)1739522724306.mp3"></audio>
+        <audio  id="s" src="./audios/录音_(格式转换)1739522573165.mp3"></audio>
+        <script src="./script.js"></script>
+    </body>
+</html>
+
